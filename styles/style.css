@@ -123,6 +123,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 31px 0;
+    align-items: center;
 }
 nav h2,.news-title{
     font-size: 32px;
