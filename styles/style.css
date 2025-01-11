@@ -146,6 +146,8 @@ nav h2,.news-title{
 }
  
 /* navbar done */
+
+/* banner section start */
 .banner{
     margin:20px 0px;
     background-color:#C6E4D6;
@@ -172,6 +174,10 @@ nav h2,.news-title{
     font-weight: 700;
     margin-bottom: 24px;
 }
+
+/* banner section end */
+
+/* vision section starts */
 
 .vision-list{
     display: flex;
@@ -210,7 +216,9 @@ nav h2,.news-title{
     line-height: 24px;
     flex:1;
 }
+/* vision section ends */
 
+/* speech section starts */
 .speech{
     background-image: url(../images/quote-bg.png);
     background-repeat: no-repeat;
@@ -237,6 +245,7 @@ nav h2,.news-title{
     color: rgba(14,14,14,.6);
     font-weight: 400;
 }
+/* speech section ends */
 
 /* recent-news */
 .news-card{
@@ -283,6 +292,8 @@ nav h2,.news-title{
   flex-direction: row-reverse;
 }
 
+
+/* donate section */
 .donate{
   padding: 0 88px;
   display: flex;
@@ -338,6 +349,8 @@ nav h2,.news-title{
   text-align: center;
 }
 
+
+/* newsletter section */
 .news-letter{
   background-color: #C6E4D6;
   border-radius: 24px;
@@ -384,6 +397,7 @@ nav h2,.news-title{
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 }
 
+/* footer sections */
 .footer-container {
   width: 100vw;
   background-color: white;  
