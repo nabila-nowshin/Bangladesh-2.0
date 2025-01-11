@@ -157,6 +157,10 @@ body{
     background-color: #F5F5F5;
 }
 
+section{
+  margin-bottom: 80px;
+}
+
 .section-title{
     font-size: 40px;
     color: rgba(14,14,14,1);
@@ -173,7 +177,7 @@ nav{
     justify-content: space-between;
     padding: 31px 0;
 }
-nav h2{
+nav h2,.news-title{
     font-size: 32px;
     font-family: 700;
 }
@@ -279,4 +283,93 @@ nav button{
     font-size: 16px;
     color: rgba(14,14,14,.6);
     font-weight: 400;
+}
+
+/* recent-news */
+.news-card{
+    margin-top: 24px;
+    display: flex;
+    gap: 32px;
+    padding: 48px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+.news-img img{
+  border-radius:24px ;
+}
+
+.news-title{
+  color:rgba(14,14,14,.8) ;
+  margin-bottom: 12px;
+}
+
+.news-items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.news-items>img{
+  margin-bottom: 12px;
+}
+
+.publishing-time-date{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.news-description{
+  margin-bottom: 32px;
+  line-height: 24px;
+  flex: 1;
+}
+
+.news-items-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.donate{
+  padding: 0 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.donate-cards{
+  margin:32px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.donate-card-items{
+  font-size: 40px;
+  color: rgba(14,14,14,.8);
+  font-weight: 900;
+  padding: 40px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 14, 14, .15);
+}
+.donate-input{
+  display: block;
+  width: 90%;
+}
+
+input{
+  display: block;
+  width: 90%;
+  padding: 20px 40px;
+  border: none;
+  margin-bottom: 32px;
+
+}
+
+input::placeholder{
+  font-size: 20px;
+  color: rgba(14,14,14,.3);
+  text-align: center;
 }
