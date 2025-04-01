@@ -9,7 +9,7 @@
     background-color: #006A50;
     color:#FFFFFF;
     padding: 17px 34px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: 600;
     border-radius: 8px;
     border: none;
@@ -25,7 +25,7 @@
  .secondary-btn{
     color:#FFFFFF;
     padding: 11px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: 600;
     border-radius: 8px;
     border: none;
@@ -94,10 +94,10 @@
 
  
 body{
-    width: 1280px; 
-    margin: 0 auto;
-    background-color: #F5F5F5;
-    position: relative;
+  max-width: 1280px; 
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  position: relative;
 }
 
 
@@ -107,14 +107,16 @@ section{
 
 .section-title2{
   margin-bottom: 24px;
+  line-height: 2rem;
 }
 .section-title,.section-title2{
-  font-size: 40px;
+  font-size: 2.5rem;
   color: rgba(14,14,14,1);
   margin-bottom: 24px;
+  line-height: 2rem;
 }
 .section-description,.vision-description{
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(14,14,14,.7);
 }
 
@@ -126,7 +128,7 @@ nav{
     align-items: center;
 }
 nav h2,.news-title{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 700;
 }
 
@@ -170,19 +172,23 @@ nav h2,.news-title{
 
 .banner-description{
     color: #0E0E0E;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
+.banner img{
+  width: 100%;
+}
 /* banner section end */
 
 /* vision section starts */
 
 .vision-list{
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 32px 0;
 }
 
 .visions{
@@ -205,14 +211,13 @@ nav h2,.news-title{
 
 .vision-title{
     color: rgba(14,14,14,.8);
-    font-size: 20px;
+    font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
 .vision-description{
     margin-bottom: 24px;
-    width: 346px;
     line-height: 24px;
     flex:1;
 }
@@ -229,19 +234,19 @@ nav h2,.news-title{
     border: 1px solid rgba(14, 14, 14, .15);
 }
 .speech-description{
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(14,14,14,.8);
     margin-bottom: 12px;
 }
 
 .speaker{
-    font-size: 20px;
+    font-size: 1.125rem;
     color: rgba(14,14,14,.8);
     font-weight: 600;
 }
 
 .speaker-title{
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(14,14,14,.6);
     font-weight: 400;
 }
@@ -256,8 +261,10 @@ nav h2,.news-title{
     background-color: #FFFFFF;
     border-radius: 24px;
 }
+
+
 .news-img img{
-  border-radius:24px ;
+  border-radius:24px;
 }
 
 .news-title{
@@ -306,18 +313,20 @@ nav h2,.news-title{
 
 .donate-cards{
   margin:32px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   justify-content: center;
   gap: 24px;
 }
 
 .donate-card-items{
-  font-size: 40px;
+  font-size: 2.5rem;
   color: rgba(14,14,14,.8);
   font-weight: 900;
   padding: 40px;
   background-color: #FFFFFF;
   border-radius: 16px;
+  line-height: 2rem;
 }
 
 .donate-card-items:hover{
@@ -344,7 +353,7 @@ nav h2,.news-title{
 }
 
 .donate-input input::placeholder{
-  font-size: 20px;
+  font-size: 1.125rem;
   color: rgba(14,14,14,.3);
   text-align: center;
 }
@@ -368,7 +377,7 @@ nav h2,.news-title{
 }
 .subscribe{
   display: flex;
-  width: 750px;
+  max-width: 750px;
   margin-bottom: 24px;
 }
 .subscribe input{
@@ -383,7 +392,7 @@ nav h2,.news-title{
 .subscribe-btn{
   border: none;
   border-radius: 0px 8px 8px  0px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 17px 34px;
   background-color: #006A50;
@@ -398,7 +407,7 @@ nav h2,.news-title{
 }
 
 /* footer sections */
-.footer-container {
+ .footer-container {
   width: 100vw;
   background-color: white;  
   padding: 20px 0;  
@@ -409,7 +418,7 @@ nav h2,.news-title{
 
 
 .footer {
-  width: 1280px; 
+  max-width: 1280px; 
   margin: 0 auto;  
   padding: 40px 0;  
   text-align: center;  
@@ -419,7 +428,7 @@ nav h2,.news-title{
 }
 
 footer-header{
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: rgba(14,14,14,1);
 }
@@ -435,4 +444,55 @@ footer hr{
   display: flex;
   gap: 23px;
   justify-content: center;
+} 
+
+@media screen and (max-width:576px) {
+  .banner,.news-card{
+    flex-direction: column;
+  }
+  
+  .vision-list{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .donate-cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .news-letter{
+    padding: 20px;
+  }
+
+  .subscribe input{
+    padding: 10px;
+  }
+  
+  .news-img img{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width:577px) and (max-width:992px ) {
+  .banner,.news-card{
+    flex-direction: column;
+  }
+  
+  .vision-list{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .donate-cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .news-letter{
+    padding: 20px;
+  }
+
+  .subscribe input{
+    padding: 10px;
+  }
+  .news-img img{
+    width: 100%;
+  }
 }
